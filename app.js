@@ -1,4 +1,20 @@
+//true와 false
+//null값은 절대 자연적으로 발생하지 않습니다. 유저가 직접적으로 변수 안에
+//아무것도 없다는 것을 확실히 하기 위해 사용합니다. 
+//쉽게 말해서 여긴 비어있어요. 라고 알아들으면 됩니다. 
+
+const amIFat=null;
+let something;
+console.log(something,amIFat);
+
+
+
+
+
+/* let과 const
+
 //let은 변경할 수 있지만, constant는 변경할 수 없다. 
+//보통은 const를 사용하고 변경을 사용할 경우에는 let으로 변수를 선언한다. 
 //var은 옛날 방식이므로 사용을 지양하자. 
 
 const a=5;
@@ -13,3 +29,4 @@ console.log("hello "+myName);
 myName="hyunwoong"
 
 console.log("your new name is "+myName);
+*/
