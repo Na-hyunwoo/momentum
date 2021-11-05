@@ -1,3 +1,20 @@
+/*array
+const daysOfWeek=["mon","tue","wed","thu","fri","sat"];
+
+//array로부터 속성 가져오기 !!
+console.log(daysOfWeek);
+
+//array에 day 넣기
+daysOfWeek.push("sun");
+
+console.log(daysOfWeek);
+*/
+
+
+
+
+
+/*boolean
 //true와 false
 //null값은 절대 자연적으로 발생하지 않습니다. 유저가 직접적으로 변수 안에
 //아무것도 없다는 것을 확실히 하기 위해 사용합니다. 
@@ -6,7 +23,7 @@
 const amIFat=null;
 let something;
 console.log(something,amIFat);
-
+*/
 
 
 
