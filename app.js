@@ -1,3 +1,22 @@
+/*object
+//속성의 값 변경, 속성 추가 등이 가능하다. 
+const player={
+    name:"hyunwoo",
+    points:10,
+    fat:false,
+};
+
+console.log(player);
+player.fat=true;
+player.lastName="potato";
+player.points= player.points+15;
+console.log(player);
+*/
+
+
+
+
+
 /*array
 const daysOfWeek=["mon","tue","wed","thu","fri","sat"];
 
