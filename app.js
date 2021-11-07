@@ -1,3 +1,12 @@
+function sayHello(name){
+    console.log("Hello my name is " + name);
+}
+
+
+sayHello("hyunwoo!!");
+
+
+
 /*object
 //속성의 값 변경, 속성 추가 등이 가능하다. 
 const player={
