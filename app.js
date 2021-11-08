@@ -1,9 +1,20 @@
-function sayHello(name){
-    console.log("Hello my name is " + name);
-}
+
+/*function
+const player={
+    name:"hyunwoo",
+    age:25,
+    // 밖에서 선언하는 함수랑은 형태가 다릅니다. 
+    sayHello: function(otherPersonsName){
+        console.log("Helloo!! "+otherPersonsName);
+    },
+
+};
+
+console.log(player.name);
+player.sayHello("nico");*/
 
 
-sayHello("hyunwoo!!");
+
 
 
 
