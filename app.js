@@ -1,3 +1,26 @@
+/*recap
+//const는 변하지 않는 값, let은 변할 수 있는값
+//기본적으로 const를 사용하기 !!
+//var은 사용하지 말기!!
+const a=5;
+let isHandsome=false;
+
+isHandsome=true;
+
+//undefined는 값이 정의되지 않았을 때 !
+//null은 값이 비었을 때 !
+
+const toBuy=["potato","tomato","pizza"];
+
+console.log(toBuy);
+toBuy[2]="water";
+console.log(toBuy);
+toBuy.push("meat");
+console.log(toBuy);
+*/
+
+
+
 
 /*function
 const player={
@@ -12,7 +35,6 @@ const player={
 
 console.log(player.name);
 player.sayHello("nico");*/
-
 
 
 
