@@ -1,4 +1,43 @@
-/*recap
+/*recap2
+const player={
+    name:"hyunwoo",
+    age:25,
+};
+
+console.log(player);
+player.name="nico";
+console.log(player);
+player.isSexy=true;
+console.log(player);
+
+function plus(a,b){
+    console.log(a+b);
+}
+
+plus(5,10);
+
+const calculator={
+    add: function(a,b){
+        console.log(a+b);
+    },
+    minus:function(a,b){
+        console.log(a-b);
+    },
+    div:function(a,b){
+        console.log(a/b);
+    },
+    mul:function(a,b){
+        console.log(a*b);
+    },
+};
+
+calculator.add(5,10);
+*/
+
+
+
+
+/*recap1
 //const는 변하지 않는 값, let은 변할 수 있는값
 //기본적으로 const를 사용하기 !!
 //var은 사용하지 말기!!
