@@ -1,3 +1,12 @@
+/*conditional
+const age= parseInt(prompt("How old are you?"));
+
+console.log(age);
+*/
+
+
+
+
 /*returns
 //recap about function. 그렇게 어려운 개념은 아니라고 생각하는데, 
 //내가 그만큼 js랑 많이 익숙해졌다는 말이겠지. 
