@@ -1,3 +1,14 @@
+/*HTML in Javascript
+const title = document.getElementById("title");
+
+title.innerText="Got you!";
+
+console.log(title.id);
+console.log(title.className);
+/*
+
+
+
 /*the document object 
 javascript는 html과 연결되어 있다. 
 javascript코드에서 html을 변경할 수 있다. 
