@@ -1,3 +1,12 @@
+/*searching for elements
+//겹치는 것이 여러개 있더라도 맨 앞에것만 가져옵니다. 
+const title = document.querySelector(".hello h1");
+
+console.log(hellos);
+*/
+
+
+
 /*HTML in Javascript
 const title = document.getElementById("title");
 
