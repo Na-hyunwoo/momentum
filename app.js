@@ -1,9 +1,24 @@
+/*events
+const title=document.querySelector("div.hello:first-child h1");
+
+function handleTitleClick(){
+    title.style.color="blue";
+}
+
+//여기에 괄호를 넣으면 안됩니다. javascript에게 함수만 넘겨주고, 자바스크립
+//트가 이 함수를 실행하게 해주는 것이 좋습니다. 
+title.addEventListener("click",handleTitleClick);
+*/
+
+
+
 /*searching for elements
 //겹치는 것이 여러개 있더라도 맨 앞에것만 가져옵니다. 
 const title = document.querySelector(".hello h1");
 
 console.log(hellos);
 */
+
 
 
 
