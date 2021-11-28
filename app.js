@@ -1,4 +1,23 @@
-//more events
+//CSS in javascript
+const h1 = document.querySelector("div.hello:first-child h1")
+
+function handleTitleClick(){
+    const currentColor=h1.style.color;
+    let newColor;
+
+    if(currentColor === "tomato"){
+        newColor="blue";
+    }else{
+        newColor="tomato";
+    }
+    h1.style.color=newColor;
+}
+
+h1.addEventListener("click",handleTitleClick);
+
+
+
+/*more events
 const h1=document.querySelector("div.hello:first-child h1");
 
 function handleTitleClick(){
@@ -37,6 +56,7 @@ window.addEventListener("resize",handleWindowResize);
 window.addEventListener("copy",handleWindowCopy);
 window.addEventListener("offline",handleWindowOffline);
 window.addEventListener("online",handleWindowOnline);
+*/
 
 
 /*events part two
