@@ -1,4 +1,18 @@
-//CSS in Javascript part Two
+const h1=document.querySelector("div.hello:first-child h1");
+
+function handleTitleClick(){
+    const clickedClass="clicked";
+    h1.classList.toggle("clicked");
+    
+}
+
+h1.addEventListener("click",handleTitleClick)
+
+
+
+
+
+/*CSS in Javascript part Two
 const h1=document.querySelector("div.hello:first-child h1");
 
 function handleTitleClick(){
@@ -14,7 +28,7 @@ function handleTitleClick(){
 }
 
 h1.addEventListener("click",handleTitleClick)
-
+*/
 
 /*CSS in javascript
 const h1 = document.querySelector("div.hello:first-child h1")
