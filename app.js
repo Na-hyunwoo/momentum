@@ -7,11 +7,11 @@ const HIDDEN_CLASSNAME="hidden";
 function onLoginSubmit(event){
     event.preventDefault();
     const username=loginInput.value;
-    loginForm.classList.add("hidden");
+    loginForm.classList.add(HIDDEN_CLASSNAME);
+    localStorage.setItem("username",username);
     greeting.innerText=`안녕 ${username}`;
     greeting.classList.remove(HIDDEN_CLASSNAME);
 }
-
 
 
 //함수 뒤에 onLoginSubmit()과 같이 작성하는 것은 함수를 바로 실행하길 원한
