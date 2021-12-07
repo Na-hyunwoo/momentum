@@ -3,21 +3,26 @@ const loginInput=document.querySelector(".login-form input");
 const greeting=document.querySelector(".greeting")
 
 const HIDDEN_CLASSNAME="hidden";
+const USERNAME_KEY="username";
 
 function onLoginSubmit(event){
     event.preventDefault();
     const username=loginInput.value;
     loginForm.classList.add(HIDDEN_CLASSNAME);
-    localStorage.setItem("username",username);
-    greeting.innerText=`안녕 ${username}`;
+    localStorage.setItem(USERNAME_KEY,username);
+    paintGreetings(username);
+}
+
+function paintGreetings(username){
+    greeting.innerText=`Hello ${username}`;
     greeting.classList.remove(HIDDEN_CLASSNAME);
 }
 
+const savedUsername=localStorage.getItem(USERNAME_KEY);
 
-//함수 뒤에 onLoginSubmit()과 같이 작성하는 것은 함수를 바로 실행하길 원한
-//다는 것인데, 우리는 그것을 원하지 않기 때문에 이렇게 작성한다. 
-//우리가 이렇게 적어놓으면 loginForm에 이벤트가 발생했을 때, 이 함수가 
-//실행된다고 할 수 있다. 
-loginForm.addEventListener("submit",onLoginSubmit);
-
-
+if(savedUsername===null){
+    loginForm.classList.remove(HIDDEN_CLASSNAME);
+    loginForm.addEventListener("submit",onLoginSubmit);
+}else{
+    paintGreetings(savedUsername);
+}
