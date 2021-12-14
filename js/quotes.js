@@ -40,13 +40,13 @@ const quotes=[
         author: "Walt Disney",
     }
 ];
-const len=quotes.length;
-const random=Math.floor(Math.random()*len);
+const quotLen=quotes.length;
+const random=Math.floor(Math.random());
 
 const quote=document.querySelector("#quote span:first-child");
 const author=document.querySelector("#quote span:last-child");
 
-const todayQuote=quotes[random];
+const todayQuote=quotes[random*quotLen];
 
 quote.innerText=todayQuote.quote;
 author.innerText=todayQuote.author;
