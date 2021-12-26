@@ -15,6 +15,7 @@ function deleteToDo(event){
     li.remove();
 }
 
+// 아니 외않돼?
 function paintToDo(newToDo){
     const li=document.createElement("li");
     li.id=newToDo.id;
