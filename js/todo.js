@@ -53,3 +53,7 @@ if(savedToDos!==null){
     parsedToDos.forEach(paintToDo);
 }
 
+const todos=[{text:"lalala"}, {text:"lololo"}]
+function sexyFilter(todo){return todo.text !== "lololo"}
+console.log(todos.filter(sexyFilter))
+console.log("hello");
