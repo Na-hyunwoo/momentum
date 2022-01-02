@@ -13,9 +13,12 @@ function saveToDos(){
 function deleteToDo(event){
     const li=event.target.parentElement;
     li.remove();
+    console.log("toDos:",toDos)
+    console.log("li:",li)
+    toDos=toDos.filter((toDo)=> toDo.id !==parseInt(li.id));
+    saveToDos();
 }
 
-// 아니 외않돼?
 function paintToDo(newToDo){
     const li=document.createElement("li");
     li.id=newToDo.id;
@@ -36,10 +39,11 @@ function handleToDoSubmit(event){
     const newToDoObj={
         text:newToDo,
         key:Date.now()
-    }
+    };
     toDos.push(newToDoObj);
     paintToDo(newToDoObj);
     saveToDos();
+    console.log(toDos);
 }
 
 
@@ -53,7 +57,7 @@ if(savedToDos!==null){
     parsedToDos.forEach(paintToDo);
 }
 
-const todos=[{text:"lalala"}, {text:"lololo"}]
-function sexyFilter(todo){return todo.text !== "lololo"}
-console.log(todos.filter(sexyFilter))
-console.log("hello");
+// const arr=[1,2,3,4]
+// arr.filter(item=>item>2)
+// const newArr=arr.filter(item=>item>2)
+// console.log(arr)
